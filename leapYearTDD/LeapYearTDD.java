@@ -10,7 +10,14 @@ public class LeapYearTDD {
 		return iNumber % 100 == 0;
 	}
 
+	private boolean isDivisibleBy400(Integer iNumber) {
+		return iNumber % 400 == 0;
+	}
+
 	public boolean isLeapYear(Integer iYear) {
+
+		if(isDivisibleBy400(iYear))
+			return true;
 
 		if(isDivisibleBy100(iYear))
 			return false;

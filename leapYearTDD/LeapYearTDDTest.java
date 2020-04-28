@@ -19,7 +19,7 @@ class LeapYearTDDTest {
 	}
 
 	@Test
-	void testDivisibleBy4And100NotValid() {
+	void testDivisibleBy4And100And400() {
 		assertTrue(leapYearTDD.isLeapYear(2000));
 	}
 }
