@@ -6,9 +6,15 @@ import org.junit.jupiter.api.Test;
 
 class LeapYearTDDTest {
 
+	private LeapYearTDD leapYearTDD = new LeapYearTDD();
+
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testDivisibleBy4() {
+		assertTrue(leapYearTDD.isLeapYear(2004));
 	}
 
+	@Test
+	void testDivisibleBy4NotValid() {
+		assertTrue(leapYearTDD.isLeapYear(1800));
+	}
 }

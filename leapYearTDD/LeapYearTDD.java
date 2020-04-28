@@ -2,9 +2,12 @@ package leapYearTDD;
 
 public class LeapYearTDD {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("hello");
+	private boolean isDivisibleBy4(Integer iNumber) {
+		return iNumber % 4 == 0;
+	}
+
+	public boolean isLeapYear(Integer iYear) {
+		return isDivisibleBy4(iYear);
 	}
 
 }
