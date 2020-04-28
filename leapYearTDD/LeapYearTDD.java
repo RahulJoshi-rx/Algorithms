@@ -16,6 +16,9 @@ public class LeapYearTDD {
 
 	public boolean isLeapYear(Integer iYear) {
 
+		if(iYear < 1584)
+			return false;
+
 		if(isDivisibleBy400(iYear))
 			return true;
 

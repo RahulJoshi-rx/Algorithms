@@ -35,4 +35,9 @@ class LeapYearTDDTest {
 		assertFalse(leapYearTDD.isLeapYear(2018));
 		assertFalse(leapYearTDD.isLeapYear(2019));
 	}
+
+	@Test
+	void testBefore1584() {
+		assertFalse(leapYearTDD.isLeapYear(1581));
+	}
 }
